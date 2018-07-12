@@ -15,6 +15,15 @@ body {
 button{
 	cursor: pointer;
 }
+h1{
+	font-size: 39pt;
+}
+h2{
+	font-size: 27pt;
+}
+p{
+	font-size: 14pt;
+}
 
 .page-header{
 	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), url(../img/city.png);
@@ -126,7 +135,7 @@ button{
 			margin-top: 190px;
 			position: relative;
 			z-index: 3;
-			h2{
+			.green-part-top-text_heading{
 				text-align: center;
 			}
 			
@@ -138,7 +147,7 @@ button{
 		.green-part-bottom-pic{
 			position: absolute;
 			width: 100%;
-			img{
+			.laptop-img{
 				position: absolute;
 				right: 62%;
 			}

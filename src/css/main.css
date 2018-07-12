@@ -12,6 +12,15 @@ body {
 button {
   cursor: pointer; }
 
+h1 {
+  font-size: 39pt; }
+
+h2 {
+  font-size: 27pt; }
+
+p {
+  font-size: 14pt; }
+
 .page-header {
   background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0))), url(../img/city.png);
   background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0)), url(../img/city.png);
@@ -106,7 +115,7 @@ button {
     margin-top: 190px;
     position: relative;
     z-index: 3; }
-    .main-cnt .green-part-top .green-part-top-text h2 {
+    .main-cnt .green-part-top .green-part-top-text .green-part-top-text_heading {
       text-align: center; }
 
 .main-cnt .green-part-bottom {
@@ -115,7 +124,7 @@ button {
   .main-cnt .green-part-bottom .green-part-bottom-pic {
     position: absolute;
     width: 100%; }
-    .main-cnt .green-part-bottom .green-part-bottom-pic img {
+    .main-cnt .green-part-bottom .green-part-bottom-pic .laptop-img {
       position: absolute;
       right: 62%; }
   .main-cnt .green-part-bottom .green-part-bottom-text {
