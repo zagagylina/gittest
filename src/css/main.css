@@ -12,7 +12,7 @@ body {
 button {
   cursor: pointer; }
 
-header {
+.page-header {
   background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0))), url(../img/city.png);
   background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0)), url(../img/city.png);
   background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0)), url(../img/city.png);
@@ -21,50 +21,55 @@ header {
   -webkit-background-size: cover;
           background-size: cover;
   width: 100%;
-  height: 520px;
+  height: 800px;
   min-width: 900px; }
-  header h1 {
-    font-weight: normal; }
-  header .logo {
-    padding-top: 30px;
+  .page-header .header-slogan {
+    font-size: 49pt;
+    text-transform: uppercase;
+    padding-top: 78px;
+    padding-bottom: 63px; }
+  .page-header .logo {
+    padding-top: 68px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     text-shadow: 1px 1px #000; }
-    header .logo img {
+    .page-header .logo .logo-img {
       width: 220px; }
-  header form {
-    width: 300px;
+  .page-header .head-form {
+    width: 340px;
     background: #fff;
     border: 0.5px solid #b1b1b1;
     -webkit-border-radius: 5px;
             border-radius: 5px;
-    margin: 15px auto;
+    margin-left: auto;
+    margin-right: auto;
     color: #938e8e;
     -webkit-box-shadow: 0px 0.5px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 0.5px rgba(0, 0, 0, 0.3); }
-    header form .col-3 {
+    .page-header .head-form .col-3 {
       padding: 0px; }
-      header form .col-3 img {
+      .page-header .head-form .col-3 .gallery-img {
         width: inherit; }
-    header form input, header form button {
+    .page-header .head-form .zip-code {
+      display: block;
+      width: 250px;
+      margin: 31px auto 24px; }
+    .page-header .head-form .press-me {
       display: block;
       width: 200px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      margin-left: auto;
-      margin-right: auto; }
-    header form button {
-      width: 160px;
       background: #4242e8;
       color: #fff;
-      padding: 5px; }
-    header form p {
+      padding: 3px;
+      margin: 10px auto 20px;
+      font-size: 20pt; }
+    .page-header .head-form .form-text {
+      font-size: 15pt;
       text-align: center;
-      padding: 10px 50px 0px; }
+      padding: 17px 40px 0px; }
 
 .main-cnt .docs {
-  margin-top: 140px;
+  margin-top: 170px;
   margin-bottom: 100px;
   width: 80%;
   margin-left: auto;
@@ -82,15 +87,15 @@ header {
 .main-cnt .green-part {
   background-color: #5fc18b;
   min-height: 500px; }
-  .main-cnt .green-part p {
+  .main-cnt .green-part .reen-part-text {
     font-size: 14px; }
 
 .main-cnt .green-part-top {
-  padding-top: 50px; }
+  padding-top: 80px; }
   .main-cnt .green-part-top .green-part-top-pic {
     position: absolute;
     width: 100%; }
-    .main-cnt .green-part-top .green-part-top-pic img {
+    .main-cnt .green-part-top .green-part-top-pic .ipad-img {
       position: absolute;
       right: 43%; }
   .main-cnt .green-part-top .green-part-top-text {
@@ -98,7 +103,7 @@ header {
     min-width: 500px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 200px;
+    margin-top: 190px;
     position: relative;
     z-index: 3; }
     .main-cnt .green-part-top .green-part-top-text h2 {
@@ -117,7 +122,8 @@ header {
     position: absolute;
     left: 46%;
     width: 35%; }
-    .main-cnt .green-part-bottom .green-part-bottom-text button {
+    .main-cnt .green-part-bottom .green-part-bottom-text .download-button {
+      display: inline-block;
       background: rgba(0, 0, 0, 0);
       color: #fff;
       padding: 7px 25px;
@@ -126,6 +132,10 @@ header {
       border: 2px solid #fff;
       font-size: 20px;
       margin-top: 50px; }
+      .main-cnt .green-part-bottom .green-part-bottom-text .download-button:hover {
+        text-decoration: none;
+        color: #d8de11;
+        border: 2px solid #d8de11; }
 
 .main-cnt .triangle {
   overflow: hidden;
@@ -168,32 +178,40 @@ footer {
   margin-top: -150px; }
   footer #map {
     width: 100%;
-    height: 600px; }
-  footer form {
+    height: 640px; }
+  footer .backlog {
     position: absolute;
-    top: 150px;
-    left: -webkit-calc(50% - 200px);
-    left: calc(50% - 200px);
+    top: 160px;
+    left: -webkit-calc(50% - 215px);
+    left: calc(50% - 215px);
     z-index: 3;
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     border: 1px solid #fff;
     background: rgba(255, 255, 255, 0.8);
-    padding-top: 70px; }
-    footer form input, footer form textarea {
+    padding-top: 110px; }
+    footer .backlog .backlog-input {
       display: block;
-      margin: 10px auto;
-      width: 250px; }
-    footer form #send_button {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 15px;
+      width: 275px; }
+    footer .backlog .backlog-message {
+      height: 80px; }
+    footer .backlog #send_button {
       display: none; }
-    footer form label {
+    footer .backlog .send-button {
       margin-top: 10px;
       cursor: pointer;
       position: absolute;
       left: -webkit-calc(50% - 33px);
       left: calc(50% - 33px); }
+      footer .backlog .send-button:hover {
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        background: rgba(255, 255, 255, 0.7); }
   footer .copyright {
     background: #43a06d;
     padding: 10px;
