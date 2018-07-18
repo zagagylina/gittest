@@ -13,13 +13,13 @@ button {
   cursor: pointer; }
 
 h1 {
-  font-size: 39pt; }
+  font-size: 39px; }
 
 h2 {
-  font-size: 27pt; }
+  font-size: 27px; }
 
 p {
-  font-size: 14pt; }
+  font-size: 14px; }
 
 .page-header {
   background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0))), url(../img/city.png);
@@ -30,10 +30,12 @@ p {
   -webkit-background-size: cover;
           background-size: cover;
   width: 100%;
-  height: 800px;
-  min-width: 900px; }
+  min-height: 800px;
+  min-width: 900px;
+  position: relative;
+  padding-bottom: 200px; }
   .page-header .header-slogan {
-    font-size: 49pt;
+    font-size: 49px;
     text-transform: uppercase;
     padding-top: 78px;
     padding-bottom: 63px; }
@@ -44,18 +46,19 @@ p {
     text-align: center;
     text-shadow: 1px 1px #000; }
     .page-header .logo .logo-img {
-      width: 220px; }
+      width: 273px; }
   .page-header .head-form {
     width: 340px;
     background: #fff;
-    border: 0.5px solid #b1b1b1;
+    border: 1px solid #b1b1b1;
     -webkit-border-radius: 5px;
             border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
     color: #938e8e;
-    -webkit-box-shadow: 0px 0.5px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 0.5px rgba(0, 0, 0, 0.3); }
+    position: absolute;
+    left: -webkit-calc(50% - 170px);
+    left: calc(50% - 170px); }
     .page-header .head-form .col-3 {
       padding: 0px; }
       .page-header .head-form .col-3 .gallery-img {
@@ -63,7 +66,10 @@ p {
     .page-header .head-form .zip-code {
       display: block;
       width: 250px;
-      margin: 31px auto 24px; }
+      margin: 31px auto 24px;
+      -webkit-border-radius: 2px;
+              border-radius: 2px;
+      border: 1px solid #e5e5e5; }
     .page-header .head-form .press-me {
       display: block;
       width: 200px;
@@ -71,9 +77,9 @@ p {
       color: #fff;
       padding: 3px;
       margin: 10px auto 20px;
-      font-size: 20pt; }
+      font-size: 20px; }
     .page-header .head-form .form-text {
-      font-size: 15pt;
+      font-size: 15px;
       text-align: center;
       padding: 17px 40px 0px; }
 
@@ -138,13 +144,16 @@ p {
       padding: 7px 25px;
       -webkit-border-radius: 5px;
               border-radius: 5px;
-      border: 2px solid #fff;
-      font-size: 20px;
-      margin-top: 50px; }
+      border: 3px solid #fff;
+      font-size: 27px;
+      margin-top: 50px;
+      width: 202px;
+      height: 57px;
+      text-align: center; }
       .main-cnt .green-part-bottom .green-part-bottom-text .download-button:hover {
         text-decoration: none;
         color: #d8de11;
-        border: 2px solid #d8de11; }
+        border: 3px solid #d8de11; }
 
 .main-cnt .triangle {
   overflow: hidden;
@@ -182,13 +191,13 @@ p {
         -ms-transform: rotate(-10deg);
             transform: rotate(-10deg); }
 
-footer {
+.footer {
   position: relative;
   margin-top: -150px; }
-  footer #map {
+  .footer #map {
     width: 100%;
     height: 640px; }
-  footer .backlog {
+  .footer .backlog {
     position: absolute;
     top: 160px;
     left: -webkit-calc(50% - 215px);
@@ -199,29 +208,32 @@ footer {
     -webkit-border-radius: 50%;
             border-radius: 50%;
     border: 1px solid #fff;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     padding-top: 110px; }
-    footer .backlog .backlog-input {
+    .footer .backlog .backlog-input {
       display: block;
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 15px;
-      width: 275px; }
-    footer .backlog .backlog-message {
+      width: 275px;
+      border: 1px solid #d8d8d8; }
+    .footer .backlog .backlog-message {
       height: 80px; }
-    footer .backlog #send_button {
-      display: none; }
-    footer .backlog .send-button {
+    .footer .backlog .send-button {
+      background-image: url("/img/ok_btn.png");
+      width: 66px;
+      height: 66px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
       margin-top: 10px;
       cursor: pointer;
       position: absolute;
       left: -webkit-calc(50% - 33px);
-      left: calc(50% - 33px); }
-      footer .backlog .send-button:hover {
-        -webkit-border-radius: 50%;
-                border-radius: 50%;
-        background: rgba(255, 255, 255, 0.7); }
-  footer .copyright {
+      left: calc(50% - 33px);
+      outline: none; }
+  .footer .copyright {
     background: #43a06d;
-    padding: 10px;
-    text-align: center; }
+    padding-top: 21px;
+    padding-bottom: 14px;
+    text-align: center;
+    font-size: 14px; }
