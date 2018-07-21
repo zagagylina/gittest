@@ -302,17 +302,17 @@ button {
   padding-bottom: 63px; }
   .page-header .header-slogan {
     font-size: 49px;
-    text-transform: uppercase;
-    padding-top: 78px;
-    padding-bottom: 63px; }
+    text-transform: uppercase; }
   .page-header .logo {
     padding-top: 68px;
+    padding-bottom: 63px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     text-shadow: 1px 1px #000; }
     .page-header .logo .logo-img {
-      width: 273px; }
+      width: 273px;
+      padding-bottom: 78px; }
   .page-header .head-form {
     width: 340px;
     background: #fff;
@@ -368,10 +368,11 @@ button {
 .main-cnt .docs {
   margin-top: 170px;
   margin-bottom: 100px;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
   color: #000; }
+  .main-cnt .docs .docs-ul {
+    padding: 0; }
   .main-cnt .docs .docs-li {
     display: inline-block;
     width: 45%;
