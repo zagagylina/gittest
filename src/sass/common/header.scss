@@ -1,0 +1,81 @@
+@import "../core/variables";
+
+.page-header{
+	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), url(../img/city.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	min-height: 800px;
+	min-width: 900px;
+	position: relative;
+	padding-bottom: 63px;
+	
+	.header-slogan{
+		font-size: 49px;
+		text-transform: uppercase;
+		padding-top: 78px;
+		padding-bottom: 63px;
+	}
+	.logo{
+		padding-top: 68px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		text-shadow: 1px 1px #000;
+		.logo-img{
+			width: 273px;
+		}
+	}
+
+	.head-form{
+		width: 340px;
+	    background: #fff;
+	    border: 1px solid #b1b1b1;
+	    border-radius: 5px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    color: #938e8e;
+	    position: absolute;
+		left: calc(50% - 170px);
+
+		.minigallery-row{
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+	    .grid-quarter{
+			padding: 0px;
+			flex: 0 0 25%;
+			max-width: 25%;
+			position: relative;
+		    width: 100%;
+		    min-height: 1px;
+			.gallery-img{
+				width: inherit;
+			}
+		}
+		.zip-code{
+			display: block;
+		    width: 250px;
+		    margin: 31px auto 24px;
+		    border-radius: 2px;
+		    border: 1px solid #e5e5e5;
+		}
+		.press-me{
+			display: block;
+			width: 200px;
+			background: #4242e8;
+			color: #fff;
+			padding: 3px;
+			margin: 10px auto 20px;
+			font-size: 20px;
+
+		}
+		.form-text{
+			font-size: 15px;
+		    text-align: center;
+    		padding: 17px 40px 0px;
+		}
+	}
+	
+}
