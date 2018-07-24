@@ -1,0 +1,21 @@
+.copyright{
+	background: $clr-bg-copyright;
+	padding-top: 21px;
+	padding-bottom: 14px;
+	text-align: center;
+	font-size: 14px;
+}
+
+
+@media only screen and (max-width: 900px) {
+	.wrapper{
+		width: 100%;
+	}
+	.page-header .header-slogan{
+		font-size: 35px;
+	}
+	.page-header .head-form{
+		width: 100%;
+		left: 0;
+	}
+}

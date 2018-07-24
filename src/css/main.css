@@ -297,7 +297,6 @@ button {
           background-size: cover;
   width: 100%;
   min-height: 800px;
-  min-width: 900px;
   position: relative;
   padding-bottom: 63px; }
   .page-header .header-slogan {
@@ -340,7 +339,6 @@ button {
           -ms-flex: 0 0 25%;
               flex: 0 0 25%;
       max-width: 25%;
-      position: relative;
       width: 100%;
       min-height: 1px; }
       .page-header .head-form .grid-quarter .gallery-img {
@@ -348,10 +346,22 @@ button {
     .page-header .head-form .zip-code {
       display: block;
       width: 250px;
+      height: 36px;
+      padding-left: 15px;
       margin: 31px auto 24px;
       -webkit-border-radius: 2px;
               border-radius: 2px;
       border: 1px solid #e5e5e5; }
+      .page-header .head-form .zip-code::-webkit-input-placeholder {
+        color: #b4adad; }
+      .page-header .head-form .zip-code::-moz-placeholder {
+        color: #b4adad; }
+      .page-header .head-form .zip-code:-ms-input-placeholder {
+        color: #b4adad; }
+      .page-header .head-form .zip-code::-ms-input-placeholder {
+        color: #b4adad; }
+      .page-header .head-form .zip-code::placeholder {
+        color: #b4adad; }
     .page-header .head-form .press-me {
       display: block;
       width: 200px;
@@ -472,13 +482,13 @@ button {
         -ms-transform: rotate(-10deg);
             transform: rotate(-10deg); }
 
-.footer {
+.main-cnt .map {
   position: relative;
   margin-top: -150px; }
-  .footer #map {
+  .main-cnt .map #map {
     width: 100%;
     height: 640px; }
-  .footer .backlog {
+  .main-cnt .map .backlog {
     position: absolute;
     top: 160px;
     left: -webkit-calc(50% - 215px);
@@ -491,16 +501,28 @@ button {
     border: 1px solid #fff;
     background: rgba(255, 255, 255, 0.85);
     padding-top: 110px; }
-    .footer .backlog .backlog-input {
+    .main-cnt .map .backlog .backlog-input {
       display: block;
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 15px;
       width: 275px;
+      height: 31px;
+      padding-left: 15px;
       border: 1px solid #d8d8d8; }
-    .footer .backlog .backlog-message {
+      .main-cnt .map .backlog .backlog-input::-webkit-input-placeholder {
+        color: rgba(76, 80, 93, 0.5); }
+      .main-cnt .map .backlog .backlog-input::-moz-placeholder {
+        color: rgba(76, 80, 93, 0.5); }
+      .main-cnt .map .backlog .backlog-input:-ms-input-placeholder {
+        color: rgba(76, 80, 93, 0.5); }
+      .main-cnt .map .backlog .backlog-input::-ms-input-placeholder {
+        color: rgba(76, 80, 93, 0.5); }
+      .main-cnt .map .backlog .backlog-input::placeholder {
+        color: rgba(76, 80, 93, 0.5); }
+    .main-cnt .map .backlog .backlog-message {
       height: 80px; }
-    .footer .backlog .send-button {
+    .main-cnt .map .backlog .send-button {
       background-image: url("/img/ok_btn.png");
       width: 66px;
       height: 66px;
@@ -512,9 +534,19 @@ button {
       left: -webkit-calc(50% - 33px);
       left: calc(50% - 33px);
       outline: none; }
-  .footer .copyright {
-    background: #43a06d;
-    padding-top: 21px;
-    padding-bottom: 14px;
-    text-align: center;
-    font-size: 14px; }
+
+.copyright {
+  background: #43a06d;
+  padding-top: 21px;
+  padding-bottom: 14px;
+  text-align: center;
+  font-size: 14px; }
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 100%; }
+  .page-header .header-slogan {
+    font-size: 35px; }
+  .page-header .head-form {
+    width: 100%;
+    left: 0; } }
