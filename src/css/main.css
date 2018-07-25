@@ -521,9 +521,10 @@ button {
       .main-cnt .map .backlog .backlog-input::placeholder {
         color: rgba(76, 80, 93, 0.5); }
     .main-cnt .map .backlog .backlog-message {
-      height: 80px; }
+      height: 80px;
+      resize: none; }
     .main-cnt .map .backlog .send-button {
-      background-image: url("/img/ok_btn.png");
+      background-image: url("../img/ok_btn.png");
       width: 66px;
       height: 66px;
       -webkit-border-radius: 50%;

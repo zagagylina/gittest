@@ -131,6 +131,7 @@
 			border: 1px solid #fff;
 			background: rgba(255, 255, 255, 0.85);
 			padding-top: 110px;
+			box-shadow: 0 0 5px rgba(0,0,0, 0.1);
 			.backlog-input{
 				display: block;
 				margin-right: auto;
@@ -140,15 +141,18 @@
 				height: 31px;
 				padding-left: 15px;
 				border: 1px solid #d8d8d8;
+				font-family: $font-input;
+				font-size: 14px;
 				&::placeholder{
 					color: $clr-backlog-input;
 				}
 			}
 			.backlog-message{
 				height: 80px;
+				resize: none;
 			}
 			.send-button{
-				background-image: url('/img/ok_btn.png');
+				background-image: url('../img/ok_btn.png');
 				width: 66px;
 				height: 66px;
 				border-radius: 50%;
