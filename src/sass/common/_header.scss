@@ -10,6 +10,9 @@
 	.header-slogan{
 		font-size: 49px;
 		text-transform: uppercase;
+		@include breakpoint($mq-tablet-small){
+			font-size: 35px;
+		}
 	}
 
 	.logo{
@@ -19,9 +22,17 @@
 		margin-right: auto;
 		text-align: center;
 		text-shadow: 1px 1px #000;
+		@include breakpoint($mq-mobile){
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
 		.logo-img{
-			width: 273px;
+			width: 70%;
+			max-width: 273px;
 			padding-bottom: 78px;
+			@include breakpoint($mq-mobile){
+				padding-bottom: 40px;
+			}
 		}
 	}
 
@@ -35,6 +46,10 @@
 	    color: #938e8e;
 	    position: absolute;
 		left: calc(50% - 170px);
+		@include breakpoint($mq-tablet){
+			width: 100%;
+			left: 0;
+		}
 
 		.minigallery-row{
 			display: flex;

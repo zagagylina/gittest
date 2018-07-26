@@ -283,15 +283,16 @@ button {
   cursor: pointer; }
 
 .wrapper {
-  width: 900px;
+  width: 90%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto; }
 
 .page-header {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0))), url(/img/city.png);
-  background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0)), url(/img/city.png);
-  background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0)), url(/img/city.png);
-  background: linear-gradient(to top, black, rgba(0, 0, 0, 0)), url(/img/city.png);
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0))), url(../../img/city.png);
+  background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0)), url(../../img/city.png);
+  background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0)), url(../../img/city.png);
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0)), url(../../img/city.png);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -302,6 +303,9 @@ button {
   .page-header .header-slogan {
     font-size: 49px;
     text-transform: uppercase; }
+    @media screen and (max-width: 980px) {
+      .page-header .header-slogan {
+        font-size: 35px; } }
   .page-header .logo {
     padding-top: 68px;
     padding-bottom: 63px;
@@ -309,9 +313,17 @@ button {
     margin-right: auto;
     text-align: center;
     text-shadow: 1px 1px #000; }
+    @media screen and (max-width: 767px) {
+      .page-header .logo {
+        padding-top: 40px;
+        padding-bottom: 40px; } }
     .page-header .logo .logo-img {
-      width: 273px;
+      width: 70%;
+      max-width: 273px;
       padding-bottom: 78px; }
+      @media screen and (max-width: 767px) {
+        .page-header .logo .logo-img {
+          padding-bottom: 40px; } }
   .page-header .head-form {
     width: 340px;
     background: #fff;
@@ -324,6 +336,10 @@ button {
     position: absolute;
     left: -webkit-calc(50% - 170px);
     left: calc(50% - 170px); }
+    @media screen and (max-width: 1200px) {
+      .page-header .head-form {
+        width: 100%;
+        left: 0; } }
     .page-header .head-form .minigallery-row {
       display: -webkit-box;
       display: -webkit-flex;
@@ -527,7 +543,7 @@ button {
         height: 80px;
         resize: none; }
       .main-cnt .map .backlog .send-button {
-        background-image: url("/img/ok_btn.png");
+        background-image: url("../../img/ok_btn.png");
         width: 66px;
         height: 66px;
         -webkit-border-radius: 50%;
@@ -546,12 +562,3 @@ button {
   padding-bottom: 14px;
   text-align: center;
   font-size: 14px; }
-
-@media only screen and (max-width: 900px) {
-  .wrapper {
-    width: 100%; }
-  .page-header .header-slogan {
-    font-size: 35px; }
-  .page-header .head-form {
-    width: 100%;
-    left: 0; } }
