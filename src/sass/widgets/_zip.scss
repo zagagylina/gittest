@@ -1,4 +1,4 @@
-.zip__form{
+.zip-form{
 	max-width: 340px;
     background: #fff;
     border: 1px solid #b1b1b1;
@@ -19,9 +19,10 @@
 			width: inherit;
 		}
 	}
-	.zip-code{
+	&__code{
 		display: block;
-	    width: 250px;
+		width: 100%;
+	    max-width: 250px;
 	    height: 36px;
 	    padding-left: 15px;
 	    margin: 31px auto 24px;
@@ -33,9 +34,10 @@
 	    	color: $clr-form-input;
 	    }
 	}
-	.press-me{
+	&__btn{
 		display: block;
-		width: 200px;
+		width: 100%;
+		max-width: 200px;
 		background: #4242e8;
 		color: #fff;
 		padding: 3px;
@@ -43,8 +45,8 @@
 		font-size: 20px;
 
 	}
-	.form-text{
-		font-size: 15px;
+	&__text{
+		font-size: 16px;
 	    text-align: center;
 		padding: 17px 40px 0px;
 	}

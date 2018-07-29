@@ -332,25 +332,26 @@ button {
       .logo__slogan {
         font-size: 20px; } }
 
-.zip__form {
+.zip-form {
   max-width: 340px;
   background: #fff;
   border: 1px solid #b1b1b1;
   border-radius: 5px;
   margin: -230px auto;
   color: #938e8e; }
-  .zip__form .gallery {
+  .zip-form .gallery {
     display: flex;
     flex-wrap: wrap; }
-    .zip__form .gallery__field {
+    .zip-form .gallery__field {
       padding: 0px;
       flex: 0 0 25%;
       width: 100%; }
-    .zip__form .gallery__img {
+    .zip-form .gallery__img {
       width: inherit; }
-  .zip__form .zip-code {
+  .zip-form__code {
     display: block;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 36px;
     padding-left: 15px;
     margin: 31px auto 24px;
@@ -358,18 +359,19 @@ button {
     border: 1px solid #e5e5e5;
     font-family: "Open Sans", sans-serif;
     font-size: 15px; }
-    .zip__form .zip-code::placeholder {
+    .zip-form__code::placeholder {
       color: #b4adad; }
-  .zip__form .press-me {
+  .zip-form__btn {
     display: block;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     background: #4242e8;
     color: #fff;
     padding: 3px;
     margin: 10px auto 20px;
     font-size: 20px; }
-  .zip__form .form-text {
-    font-size: 15px;
+  .zip-form__text {
+    font-size: 16px;
     text-align: center;
     padding: 17px 40px 0px; }
 
@@ -385,17 +387,17 @@ button {
 
 .list {
   padding: 0; }
+  .list__item:first-child {
+    margin-right: 40px; }
   .list__item {
     display: inline-block;
-    width: 44%;
-    min-width: 200px;
-    margin-right: 40px;
+    width: 46%;
     vertical-align: top; }
     @media screen and (max-width: 767px) {
       .list__item {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 10px; } }
+        margin-bottom: 20px; } }
   .list__img {
     float: left;
     margin-right: 30px; }

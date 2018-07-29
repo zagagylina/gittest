@@ -10,16 +10,17 @@
 }
 .list{
 	padding: 0;
+	&__item:first-child{
+		margin-right: 40px;
+	}
 	&__item{
 		display: inline-block;
-		width: 44%;
-		min-width: 200px;
-		margin-right: 40px;
+		width: 46%;
 		vertical-align: top;
 		@include breakpoint($mq-mobile){
 			width: 100%;
 			margin-right: 0;
-			margin-bottom: 10px;
+			margin-bottom: 20px;
 		}
 	}
 	&__img{
