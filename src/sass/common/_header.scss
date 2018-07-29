@@ -1,102 +1,49 @@
-.page-header{
+.p-head{
 	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), url(../../img/city.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 	min-height: 800px;
 	position: relative;
-	padding-bottom: 63px;
 	padding-left: 20px;
 	padding-right: 20px;
-	
-	.header-slogan{
-		font-size: 49px;
-		text-transform: uppercase;
-		@include breakpoint($mq-tablet-small){
-			font-size: 35px;
+	z-index: -1;
+	@include breakpoint($mq-mobile){
+			min-height: 700px;
 		}
+	@include breakpoint($mq-mobile-medium){
+		min-height: 580px;
+	}
+}
+.logo{
+	padding-top: 68px;
+	padding-bottom: 62px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-shadow: 1px 1px #000;
+	@include breakpoint($mq-mobile){
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 
-	.logo{
-		padding-top: 68px;
-		padding-bottom: 63px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		text-shadow: 1px 1px #000;
+	&__img{
+		width: 35vw;
+		max-width: 273px;
+		padding-bottom: 78px;
 		@include breakpoint($mq-mobile){
-			padding-top: 40px;
 			padding-bottom: 40px;
 		}
-		.logo-img{
-			width: 70%;
-			max-width: 273px;
-			padding-bottom: 78px;
-			@include breakpoint($mq-mobile){
-				padding-bottom: 40px;
-			}
-		}
 	}
-
-	.head-form{
-		width: 340px;
-	    background: #fff;
-	    border: 1px solid #b1b1b1;
-	    border-radius: 5px;
-	    margin-left: auto;
-	    margin-right: auto;
-	    color: #938e8e;
-	    position: absolute;
-		left: calc(50% - 170px);
-		@include breakpoint($mq-tablet){
-			width: 100%;
-			left: 0;
+	&__slogan{
+		font-size: 49px;
+		text-transform: uppercase;
+		line-height: 1.2;
+		@include breakpoint($mq-tablet-small){
+			font-size: 36px;
 		}
-
-		.minigallery-row{
-			display: flex;
-			flex-wrap: wrap;
-		}
-
-	    .grid-quarter{
-			padding: 0px;
-			flex: 0 0 25%;
-			max-width: 25%;
-		    width: 100%;
-		    min-height: 1px;
-			.gallery-img{
-				width: inherit;
-			}
-		}
-		.zip-code{
-			display: block;
-		    width: 250px;
-		    height: 36px;
-		    padding-left: 15px;
-		    margin: 31px auto 24px;
-		    border-radius: 2px;
-		    border: 1px solid #e5e5e5;
-		    font-family: $font-input;
-			font-size: 15px;
-		    &::placeholder{
-		    	color: $clr-form-input;
-		    }
-		}
-		.press-me{
-			display: block;
-			width: 200px;
-			background: #4242e8;
-			color: #fff;
-			padding: 3px;
-			margin: 10px auto 20px;
+		@include breakpoint($mq-mobile){
 			font-size: 20px;
-
-		}
-		.form-text{
-			font-size: 15px;
-		    text-align: center;
-    		padding: 17px 40px 0px;
 		}
 	}
-	
 }

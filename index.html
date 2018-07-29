@@ -7,94 +7,98 @@
 	<link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-
-	<header class="page-header">
+	<header class="p-head">
 		<div class="wrapper">
 			<div class="logo">
-				<img class="logo-img" src="img/Logo.png" alt="logo">
-				<h1 class="header-slogan">Be sure you put your feet<br><strong>in the right place</strong></h1>
+				<img class="logo__img" src="img/Logo.png" alt="logo">
+				<h1 class="logo__slogan">Be sure you put your feet
+					<br>
+					<strong>in the right place</strong></h1>
 			</div>
-			<form class="head-form">
-				<input class="zip-code" id="zip" type="text" placeholder="Enter your ZIP code">
-				<div class="minigallery">
-					<div class="minigallery-row">
-						<div class="grid-quarter"><img class="gallery-img" src="img/rok.jpg" alt="picture"></div>
-						<div class="grid-quarter"><img class="gallery-img" src="img/rok.jpg" alt="picture"></div>
-						<div class="grid-quarter"><img class="gallery-img" src="img/rok.jpg" alt="picture"></div>
-						<div class="grid-quarter"><img class="gallery-img" src="img/rok.jpg" alt="picture"></div>
-						<div class="grid-quarter"><img class="gallery-img" src="img/rok.jpg" alt="picture"></div>
-						<div class="grid-quarter"><img class="gallery-img" src="img/rok.jpg" alt="picture"></div>
-						<div class="grid-quarter"><img class="gallery-img" src="img/rok.jpg" alt="picture"></div>
-						<div class="grid-quarter"><img class="gallery-img" src="img/rok.jpg" alt="picture"></div>
-					</div>
-				</div>
-				<p class="form-text">This is Photoshop's version  of Lorem Ipsum.</p>
-				<button class="press-me">PRESS ME</button>
-			</form>
 		</div>
 	</header>
+	<section class="zip">
+		<form class="zip__form">
+			<input class="zip-code" id="zip" type="text" placeholder="Enter your ZIP code">
+			<div class="gallery">
+				<div class="gallery__field"><img class="gallery__img" src="img/rok.jpg" alt="picture"></div>
+				<div class="gallery__field"><img class="gallery__img" src="img/rok.jpg" alt="picture"></div>
+				<div class="gallery__field"><img class="gallery__img" src="img/rok.jpg" alt="picture"></div>
+				<div class="gallery__field"><img class="gallery__img" src="img/rok.jpg" alt="picture"></div>
+				<div class="gallery__field"><img class="gallery__img" src="img/rok.jpg" alt="picture"></div>
+				<div class="gallery__field"><img class="gallery__img" src="img/rok.jpg" alt="picture"></div>
+				<div class="gallery__field"><img class="gallery__img" src="img/rok.jpg" alt="picture"></div>
+				<div class="gallery__field"><img class="gallery__img" src="img/rok.jpg" alt="picture"></div>
+			</div>
+			<p class="form-text">This is Photoshop's version  of Lorem Ipsum.</p>
+			<button class="press-me">PRESS ME</button>
+		</form>
+	</section>
+	
 	<div class="main-cnt">
-		<div class="docs">
+
+		<section class="docs">
 			<div class="wrapper">
-				<ul class="docs-ul">
-					<li class="docs-li">
-						<div class="doc-logo"><img src="img/Pages.png" alt="Pages"></div>
-						<div class="doc-text">
+				<ul class="list">
+					<li class="list__item">
+						<div class="list__img"><img src="img/Pages.png" alt="Pages"></div>
+						<div class="list__text">
 							<h2>Documents</h2>
 							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</p>
 						</div>
 					</li>
-					<li class="docs-li">
-						<div class="doc-logo"><img src="img/Camera.png" alt="Camera"></div>
-						<div class="doc-text">
+					<li class="list__item">
+						<div class="list__img"><img src="img/Camera.png" alt="Camera"></div>
+						<div class="list__text">
 							<h2>Photos</h2>
 							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</p>
 						</div>
 					</li>
 				</ul>	
 			</div>
-		</div>
-		<div class="green-part">	
-			<div class="green-part-top">
+		</section>
+		<section class="container">	
+			<div class="container-top">
 				<div class="wrapper">
-					<div class="green-part-top-pic">
-						<img class="ipad-img" src="img/ipad_shadow.png" alt="ipad_shadow">
-						<img class="ipad-img" src="img/ipad.png" alt="ipad">
+					<div class="container-top__pic-frame">
+						<img class="container-top__img" src="img/ipad_shadow.png" alt="ipad_shadow">
+						<img class="container-top__img" src="img/ipad.png" alt="ipad">
 					</div>
-					<div class="green-part-top-text">
-						<h1 class="green-part-top-text_heading">This is a Heading</h1>
-						<p class="green-part-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+					<div class="container-top__text">
+						<h1 class="container-top__heading">This is a Heading</h1>
+						<p class="container__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
 						<br>
-						<p class="green-part-text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+						<p class="container__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
 					</div>
 				</div>
 			</div>
 			
 			<div class="triangle"></div>
 
-			<div class="green-part-bottom">
+			<div class="container-bottom">
 				<div class="wrapper">
-					<div class="green-part-bottom-pic">
-						<img class="laptop-img" src="img/laptop_Shadow.png" alt="laptop_shadow">
-						<img class="laptop-img" src="img/laptop.png" alt="laptop">
+					<div class="container-bottom__pic-frame">
+						<img class="container-bottom__img" src="img/laptop_Shadow.png" alt="laptop_shadow">
+						<img class="container-bottom__img" src="img/laptop.png" alt="laptop">
 					</div>
-					<div class="green-part-bottom-text">
+					<div class="container-bottom__text">
 						<h1>This is a Heading</h1>
-						<p class="green-part-text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-						<a href="#" class="download-button" download="">Download</a>
+						<p class="container__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+						<a href="#" class="container-bottom__button" download="">Download</a>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="map">
+		</section>
+		<section class="map">
 			<form action="" class="backlog">
-				<input class="backlog-input" type="text" placeholder="Name">
-				<input class="backlog-input" type="email" placeholder="Email address">
-				<textarea class="backlog-input backlog-message" name="message" placeholder="Message" cols="5" rows="4"></textarea>
-				<input class="send-button" type="button" onclick="alert('Done!')">
+				<input class="backlog__input" type="text" placeholder="Name">
+				<input class="backlog__input" type="email" placeholder="Email address">
+				<textarea class="backlog__input backlog__input--message" name="message" placeholder="Message" cols="5" rows="4"></textarea>
+				<!-- <input class="backlog__button" type="button" onclick="alert('Done!')"> -->
+				<button class="backlog__button" onclick="alert('Din-Don!')"></button>
 			</form>
 			<div id="map"></div>
-		</div>
+		</section>
 	</div>
 
 	<footer class="footer">

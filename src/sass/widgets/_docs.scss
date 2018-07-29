@@ -1,0 +1,34 @@
+.docs{
+	margin-top: 280px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	color: $clr-dark;
+	@include breakpoint($mq-mobile){
+		margin-bottom: 50px;
+	}
+}
+.list{
+	padding: 0;
+	&__item{
+		display: inline-block;
+		width: 44%;
+		min-width: 200px;
+		margin-right: 40px;
+		vertical-align: top;
+		@include breakpoint($mq-mobile){
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+	}
+	&__img{
+		float: left;
+		margin-right: 30px;
+	}
+	&__text{
+		overflow: hidden;
+	}
+
+}
+

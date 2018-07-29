@@ -1,0 +1,89 @@
+.map{
+	position: relative;
+	margin-top: -150px;
+	#map{
+		width: 100%;
+		height: 640px;
+	}
+	.backlog{
+		position: absolute;
+		top: 160px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 3;
+		width: 430px;
+		height: 430px;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		background: rgba(255, 255, 255, 0.85);
+		padding-top: 110px;
+		box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+		&__input{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 15px;
+			width: 275px;
+			height: 31px;
+			padding-left: 15px;
+			border: 1px solid #d8d8d8;
+			font-family: $font-input;
+			font-size: 14px;
+			&::placeholder{
+				color: $clr-backlog-input;
+			}
+			&--message{
+				height: 80px;
+				resize: none;
+			}
+		}
+		
+		&__button1{
+			background-image: url('../../img/ok_btn.png');
+			width: 66px;
+			height: 66px;
+			border-radius: 50%;
+			margin-top: 10px;
+			cursor: pointer;
+			position: absolute;
+			left: calc(50% - 33px);
+			outline: none;
+		}
+		&__button{
+			background: $clr-bg-copyright;
+			width: 66px;
+			height: 66px;
+			border-radius: 50%;
+			margin-top: 10px;
+			cursor: pointer;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			outline: none;
+			&::before{
+				content: '';
+				position: absolute;
+				top: 75%;
+				left: 45%;
+				transform: translate(-100%, -100%) rotate(45deg);
+				transform-origin: 100% 100%;
+				width: 20px;
+				height: 10px;
+				background-color: $clr-light;
+				border-radius: 4px;
+			}
+			&::after{
+				content: '';
+				position: absolute;
+				top: 75%;
+				left: 45%;
+				transform: translate(0%, -100%) rotate(-45deg);
+				transform-origin: 0% 100%;
+				width: 35px;
+				height: 10px;
+				background-color: $clr-light;
+				border-radius: 4px;
+			}
+		}
+	}
+}

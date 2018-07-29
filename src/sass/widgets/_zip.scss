@@ -1,0 +1,51 @@
+.zip__form{
+	max-width: 340px;
+    background: #fff;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    margin: -230px auto;
+
+    color: #938e8e;
+
+	.gallery{
+		display: flex;
+		flex-wrap: wrap;
+		&__field{
+			padding: 0px;
+			flex: 0 0 25%;
+			width: 100%;
+		}
+		&__img{
+			width: inherit;
+		}
+	}
+	.zip-code{
+		display: block;
+	    width: 250px;
+	    height: 36px;
+	    padding-left: 15px;
+	    margin: 31px auto 24px;
+	    border-radius: 2px;
+	    border: 1px solid #e5e5e5;
+	    font-family: $font-input;
+		font-size: 15px;
+	    &::placeholder{
+	    	color: $clr-form-input;
+	    }
+	}
+	.press-me{
+		display: block;
+		width: 200px;
+		background: #4242e8;
+		color: #fff;
+		padding: 3px;
+		margin: 10px auto 20px;
+		font-size: 20px;
+
+	}
+	.form-text{
+		font-size: 15px;
+	    text-align: center;
+		padding: 17px 40px 0px;
+	}
+}
