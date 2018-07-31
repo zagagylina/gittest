@@ -4,21 +4,8 @@
     border: 1px solid #b1b1b1;
     border-radius: 5px;
     margin: -230px auto;
-
     color: #938e8e;
-
-	.gallery{
-		display: flex;
-		flex-wrap: wrap;
-		&__field{
-			padding: 0px;
-			flex: 0 0 25%;
-			width: 100%;
-		}
-		&__img{
-			width: inherit;
-		}
-	}
+    
 	&__code{
 		display: block;
 		width: 100%;
@@ -48,6 +35,18 @@
 	&__text{
 		font-size: 16px;
 	    text-align: center;
-		padding: 17px 40px 0px;
+		padding: 17px 40px 0;
 	}
 }
+.gallery{
+		display: flex;
+		flex-wrap: wrap;
+		&__field{
+			padding: 0px;
+			flex: 0 0 25%;
+			width: 100%;
+		}
+		&__img{
+			width: inherit;
+		}
+	}

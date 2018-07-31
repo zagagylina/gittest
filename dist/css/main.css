@@ -286,8 +286,8 @@ button {
   margin-right: auto;
   padding: 0 20px; }
 
-.p-head {
-  background: linear-gradient(to top, black, rgba(0, 0, 0, 0)), url(../../img/city.png);
+.header {
+  background-image: url(../../img/city.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -297,17 +297,24 @@ button {
   padding-right: 20px;
   z-index: -1; }
   @media screen and (max-width: 767px) {
-    .p-head {
+    .header {
       min-height: 700px; } }
   @media screen and (max-width: 600px) {
-    .p-head {
+    .header {
       min-height: 580px; } }
+  .header::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+    z-index: -1; }
 
 .logo {
   padding-top: 68px;
   padding-bottom: 62px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   text-shadow: 1px 1px #000; }
   @media screen and (max-width: 767px) {
@@ -339,15 +346,6 @@ button {
   border-radius: 5px;
   margin: -230px auto;
   color: #938e8e; }
-  .zip-form .gallery {
-    display: flex;
-    flex-wrap: wrap; }
-    .zip-form .gallery__field {
-      padding: 0px;
-      flex: 0 0 25%;
-      width: 100%; }
-    .zip-form .gallery__img {
-      width: inherit; }
   .zip-form__code {
     display: block;
     width: 100%;
@@ -373,7 +371,17 @@ button {
   .zip-form__text {
     font-size: 16px;
     text-align: center;
-    padding: 17px 40px 0px; }
+    padding: 17px 40px 0; }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap; }
+  .gallery__field {
+    padding: 0px;
+    flex: 0 0 25%;
+    width: 100%; }
+  .gallery__img {
+    width: inherit; }
 
 .docs {
   margin-top: 280px;
@@ -384,31 +392,31 @@ button {
   @media screen and (max-width: 767px) {
     .docs {
       margin-bottom: 50px; } }
-
-.list {
-  padding: 0; }
-  .list__item:first-child {
+  .docs__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .docs__item:first-child {
     margin-right: 40px; }
-  .list__item {
+  .docs__item {
     display: inline-block;
     width: 46%;
     vertical-align: top; }
     @media screen and (max-width: 767px) {
-      .list__item {
+      .docs__item {
         width: 100%;
         margin-right: 0;
         margin-bottom: 20px; } }
-  .list__img {
+  .docs__img {
     float: left;
     margin-right: 30px; }
-  .list__text {
+  .docs__text {
     overflow: hidden; }
 
 .container {
   background-color: #5fc18b;
   min-height: 500px; }
-  .container__text {
-    font-size: 14px; }
 
 .container-top {
   padding-top: 80px; }
@@ -419,12 +427,12 @@ button {
     right: 43%; }
   .container-top__text {
     width: 70%;
-    min-width: 500px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 200px;
     position: relative;
-    z-index: 3; }
+    z-index: 3;
+    font-size: 14px; }
   .container-top__heading {
     text-align: center; }
 
@@ -439,7 +447,8 @@ button {
   .container-bottom__text {
     position: absolute;
     left: 46%;
-    width: 35%; }
+    width: 35%;
+    font-size: 14px; }
   .container-bottom__button {
     display: inline-block;
     background: rgba(0, 0, 0, 0);
@@ -488,84 +497,75 @@ button {
 .map {
   position: relative;
   margin-top: -150px; }
-  .map #map {
-    width: 100%;
-    height: 640px; }
-  .map .backlog {
+
+#map {
+  width: 100%;
+  height: 640px; }
+
+.backlog {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.85);
+  padding-top: 110px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  .backlog__input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    width: 275px;
+    height: 31px;
+    padding-left: 15px;
+    border: 1px solid #d8d8d8;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; }
+    .backlog__input::placeholder {
+      color: rgba(76, 80, 93, 0.5); }
+    .backlog__input--message {
+      height: 80px;
+      resize: none; }
+  .backlog__button {
+    background: #43a06d;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
     position: absolute;
-    top: 160px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 3;
-    width: 430px;
-    height: 430px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    background: rgba(255, 255, 255, 0.85);
-    padding-top: 110px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
-    .map .backlog__input {
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 15px;
-      width: 275px;
-      height: 31px;
-      padding-left: 15px;
-      border: 1px solid #d8d8d8;
-      font-family: "Open Sans", sans-serif;
-      font-size: 14px; }
-      .map .backlog__input::placeholder {
-        color: rgba(76, 80, 93, 0.5); }
-      .map .backlog__input--message {
-        height: 80px;
-        resize: none; }
-    .map .backlog__button1 {
-      background-image: url("../../img/ok_btn.png");
-      width: 66px;
-      height: 66px;
-      border-radius: 50%;
-      margin-top: 10px;
-      cursor: pointer;
+    outline: none; }
+    .backlog__button::before {
+      content: '';
       position: absolute;
-      left: calc(50% - 33px);
-      outline: none; }
-    .map .backlog__button {
-      background: #43a06d;
-      width: 66px;
-      height: 66px;
-      border-radius: 50%;
-      margin-top: 10px;
-      cursor: pointer;
+      top: 75%;
+      left: 45%;
+      transform: translate(-100%, -100%) rotate(45deg);
+      transform-origin: 100% 100%;
+      width: 20px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 4px; }
+    .backlog__button::after {
+      content: '';
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      outline: none; }
-      .map .backlog__button::before {
-        content: '';
-        position: absolute;
-        top: 75%;
-        left: 45%;
-        transform: translate(-100%, -100%) rotate(45deg);
-        transform-origin: 100% 100%;
-        width: 20px;
-        height: 10px;
-        background-color: #fff;
-        border-radius: 4px; }
-      .map .backlog__button::after {
-        content: '';
-        position: absolute;
-        top: 75%;
-        left: 45%;
-        transform: translate(0%, -100%) rotate(-45deg);
-        transform-origin: 0% 100%;
-        width: 35px;
-        height: 10px;
-        background-color: #fff;
-        border-radius: 4px; }
+      top: 75%;
+      left: 45%;
+      transform: translate(0, -100%) rotate(-45deg);
+      transform-origin: 0 100%;
+      width: 35px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 4px; }
 
 .footer {
-  display: none;
   background: #43a06d;
   padding-top: 21px;
   padding-bottom: 14px;
